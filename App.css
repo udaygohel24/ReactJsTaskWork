@@ -1,0 +1,809 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1292px;
+  margin: 0 auto;
+}
+
+/* --------- Navbar css -------- */
+.main-header-wrapper {
+  background-color: darkblue;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100%;
+  max-width: 4%;
+}
+
+img {
+  border-radius: 4px;
+  display: block;
+  margin-left: 30px;
+}
+
+#manu-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item-right-side {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.s-list a {
+  color: white;
+  background-color: rgb(59 69 244);
+  padding: 8px 12px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.nav-item .logout {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.btn-logout {
+  color: white;
+  background-color: rgb(59 69 244);
+  padding: 8px 14px;
+  margin: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+/* ------footer css--------- */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkblue;
+  padding: 6px;
+}
+.footer-text {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ---------signUp css------------ */
+.signup-container {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #0f76dd;
+}
+
+.signup-button:active {
+  transform: translateY(1px);
+}
+
+/* ----------login css------------ */
+.login-container {
+  max-width: 350px;
+  margin: 90px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* ---------add css form----------*/
+.login-container-add {
+  max-width: 350px;
+  margin: 65px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container-add h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* -----------------product table css-------------- */
+.crud-table-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crud-table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Add-search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Add-btn .add-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.search input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.span {
+  font-size: 12px;
+  color: red;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.crud-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.crud-table th,
+.crud-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.crud-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.crud-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.crud-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  border: none;
+  padding: 6px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.update-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.user-heading {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+/* ---------risponsive tablate size ------------- */
+@media screen and (max-width: 768px) {
+  /* -----navbar css---------- */
+  img {
+    border-radius: 3px;
+  }
+
+  .s-list a {
+    padding: 6px 9px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  .nav-item-right-side {
+    margin-bottom: 4px;
+  }
+
+  .nav-item .logout {
+    margin-bottom: 4px;
+  }
+
+  .btn-logout {
+    padding: 6px 9px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  /* ------footer css----------- */
+  .footer {
+    padding: 4px;
+  }
+  .footer-text {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* ------------signup css--------- */
+  .signup-container {
+    max-width: 300px;
+    margin: 70px auto;
+    padding: 20px;
+  }
+  .signup-container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 11px;
+    transition: border-color 0.3s ease;
+  }
+  .signup-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* ---------LOGIN CSS-------- */
+  .login-container {
+    max-width: 300px;
+    margin: 94px auto;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  /* ---------add css form----------*/
+  .login-container-add {
+    max-width: 300px;
+    margin: 94px auto;
+    padding: 20px;
+  }
+
+  .login-container-add h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  /* -----------product tabal list css------------ */
+  .Add-btn .add-btn {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .Add-search-container {
+    margin-bottom: 4px;
+  }
+
+  .search input {
+    width: 160px;
+    font-size: 12px;
+  }
+
+  .span {
+    font-size: 10px;
+    color: red;
+  }
+
+  .crud-table-container h2 {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+  .crud-table-container {
+    padding: 50px;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 5px 10px;
+  }
+}
+
+/* ----------tablate and laptop size-------------  */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  /* -----navbar css---------- */
+
+  img {
+    border-radius: 3px;
+  }
+
+  .s-list a {
+    padding: 6px 9px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .nav-item-right-side {
+    margin-bottom: 4px;
+  }
+
+  .nav-item .logout {
+    margin-bottom: 4px;
+  }
+
+  .btn-logout {
+    font-size: 13px;
+  }
+
+  /* ------footer css----------- */
+  .footer {
+    padding: 7px;
+  }
+  .footer-text {
+    font-size: 22px;
+  }
+
+  /* ------------signup css--------- */
+  .signup-container {
+    max-width: 300px;
+    margin: 70px auto;
+    padding: 20px;
+  }
+  .signup-container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .span {
+    font-size: 10px;
+    color: red;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 11px;
+    transition: border-color 0.3s ease;
+  }
+  .signup-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* ---------LOGIN CSS-------- */
+  .login-container {
+    max-width: 300px;
+    margin: 94px auto;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  /* ---------add css form----------*/
+  .login-container-add {
+    max-width: 300px;
+    margin: 94px auto;
+    padding: 20px;
+  }
+
+  .login-container-add h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  /* -----------product tabal list css------------ */
+  .Add-btn .add-btn {
+    padding: 8px 11px;
+    font-size: 13px;
+  }
+
+  .Add-search-container {
+    margin-bottom: 4px;
+  }
+
+  .search input {
+    width: 170px;
+    font-size: 13px;
+  }
+  .crud-table-container h2 {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+  .crud-table-container {
+    padding: 50px;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 5px 10px;
+  }
+}
+
+/* ---------------small mobile size------------------ */
+@media screen and (max-width: 320px) {
+  /* -----navbar css---------- */
+  img {
+    margin-left: 10px;
+  }
+
+  .s-list a {
+    padding: 4px 7px;
+    margin: 8px;
+    border-radius: 2px;
+    font-size: 7px;
+    margin-bottom: 10px;
+  }
+
+  .nav-item-right-side {
+    margin-bottom: 7px;
+  }
+
+  .nav-item .logout {
+    margin-bottom: 4px;
+  }
+
+  .btn-logout {
+    padding: 4px 7px;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 7 px;
+    margin-bottom: 8px;
+  }
+
+  /* ------footer css----------- */
+  .footer {
+    padding: 4px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+
+  /* ------------signup css---------------- */
+  .signup-container {
+    max-width: 220px;
+    margin: 95px auto;
+  }
+  .signup-container h2 {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .form-group {
+    margin-bottom: 11px;
+  }
+
+  .form-group label {
+    margin-bottom: 2px;
+    color: #555;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 8px;
+  }
+  .signup-button {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  /* ---------LOGIN CSS-------- */
+  .login-container {
+    max-width: 220px;
+    margin: 110px auto;
+  }
+
+  .login-container h2 {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  /* ---------add css ----------*/
+  .login-container-add {
+    max-width: 220px;
+    margin: 95px auto;
+  }
+
+  .login-container-add h2 {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .span {
+    font-size: 8px;
+    color: red;
+  }
+
+  /* -----------product tabal list css------------ */
+  .Add-btn .add-btn {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+  .Add-search-container {
+    margin-bottom: 1px;
+  }
+
+  .search input {
+    width: 100px;
+    font-size: 10px;
+  }
+  .crud-table-container h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .crud-table-container {
+    padding: 30px;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 10px;
+  }
+  .btn {
+    padding: 3px 8px;
+    margin: 3px;
+  }
+}
+
+/* ---------------mobile larz and small size------------------ */
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  /* -----navbar css---------- */
+  img {
+    margin-left: 15px;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 5%;
+  }
+
+  .s-list a {
+    padding: 4px 7px;
+    margin: 7px;
+  }
+
+  .nav-item-right-side {
+    margin-bottom: 7px;
+  }
+
+  .nav-item .logout {
+    margin-bottom: 4px;
+  }
+
+  .btn-logout {
+    padding: 4px 7px;
+    margin: 12px;
+  }
+
+  /* ------------signup css---------------- */
+  .signup-container {
+    max-width: 235px;
+    margin: 87px auto;
+  }
+  .signup-container h2 {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+
+  .form-group label {
+    margin-bottom: 4px;
+    color: #555;
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 7px 11px;
+    border-radius: 2px;
+    font-size: 9px;
+  }
+  .signup-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  /* ---------LOGIN CSS-------- */
+  .login-container {
+    max-width: 235px;
+    margin: 110px auto;
+  }
+
+  .login-container h2 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  /* ---------add css ----------*/
+  .login-container-add {
+    max-width: 235px;
+    margin: 95px auto;
+  }
+
+  .login-container-add h2 {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+  .span {
+    font-size: 9px;
+    color: red;
+  }
+
+  /* -----------product tabal list css------------ */
+  .Add-btn .add-btn {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+  .Add-search-container {
+    margin-bottom: 2px;
+  }
+
+  .search input {
+    width: 100px;
+    font-size: 11px;
+  }
+  .crud-table-container h2 {
+    margin-bottom: 28px;
+    font-size: 22px;
+  }
+  .crud-table-container {
+    padding: 30px;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 4px 9px;
+    margin: 4px;
+  }
+}
